@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+</head>
+<!--LOS # REPRESENTA A ID, LOS . REPRESENTA A CLASS-->
+<style>
+    
+    #header{
+        background-color: aqua;
+        padding: 24px;
+    }
+    #navbar{
+        background-color: lightcoral;
+        padding: 8px;
+        font-weight: 700;
+    }
+    #main-section{
+        background-color: lightgray;
+        padding: 24px;
+    }
+    #section{
+        background-color: lightgreen;
+        padding: 16px;
+    }
+    .article{
+        background-color: lightseagreen;
+        padding: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+    }
+    #footer{
+        background-color: lightskyblue;
+        padding: 24px;
+        font-weight: 600;
+    }
+</style>
+<body style="margin: 0;">
+    <header id="header">
+        <nav id="navbar">
+            <span>Menu 1</span>
+            <span>Menu 2</span>
+            <span>Menu 3</span>
+        </nav>
+    </header>
+
+    <main id="main-section">
+        <section id="section">
+            <article class="article">
+                <header>
+                    <h3>Article Title One</h3>
+                    <a href="/">Author One</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt atque, eius soluta tenetur hic obcaecati recusandae, dolorem totam, deleniti reprehenderit corrupti quo sapiente. Quos, quam? Ipsa, ullam! Ut, natus.</p>
+                    <!--semantic tags - detils and summary(Es otro video)-->
+                    <details>
+                        <summary>Chapter One</summary>
+                        <p>This is an introductory chapter</p>
+                    </details>
+                    <details>
+                        <summary>Chapter Two</summary>
+                        <ul>
+                            <li>Heading</li>
+                            <li>Paragraph</li>
+                            <li>Links</li>
+                        </ul>>
+                    </details>
+                    <details>
+                        <summary>Chapter Three</summary>
+                        <a href="https://www.edyoda.com" target="_blank">edyoda</a>
+                    </details>
+                </header>
+            </article>
+            <article class="article">
+                <header>
+                    <h3>Article Title Two</h3>
+                    <a href="/">Author Two</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt atque, eius soluta tenetur hic obcaecati recusandae, dolorem totam, deleniti reprehenderit corrupti quo sapiente. Quos, quam? Ipsa, ullam! Ut, natus.</p>
+                </header>
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Copryright 2022</p>
+    </footer>
+</body>
+</html>

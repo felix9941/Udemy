@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        table{
+            width: 550px;
+            background-color: aquamarine;
+            margin-top: 24px;
+            margin-left: 24px;
+        }
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+        td, th{
+            padding: 20px;
+        }
+        .imagen-item{
+            width: 450px;
+            height: 300px;
+        }
+        .caption{
+            font-size: 24px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+        #footer{
+        background-color: lightskyblue;
+        padding: 24px;
+        font-weight: 600;
+    }
+    </style>
+</head>
+<body>
+    <table style="text-align: center;">
+        <!--el font-weight es para poner en negrita-->
+        <caption style="font-weight: 600;">My Secret Time-Table</caption>
+        <!--td: Son filas, th: son columnas, el rowspan es para ser una Fila completa-->
+        <tr>
+            <td rowspan="7">Hours</td>
+            <th>Monday</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td>Maths</td>
+            <td>Algebra</td>
+            <td>SO</td>
+            <td>Soft</td>
+        </tr>
+        <tr>
+            <td>AED</td>
+            <td>AM2</td>
+            <td>Quimica</td>
+            <td>FisicaII</td>
+            <td>AS</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: center">
+                Lunch Break
+            </td>
+        </tr>
+        <tr>
+            <td>FisicaII</td>
+            <td>AS</td>
+            <td>Economy</td>
+            <td>AED</td>
+            <td>AM2</td>
+        </tr>
+        <tr>
+            <td>GD</td>
+            <td>SO</td>
+            <td>Soft</td>
+            <td>DS</td>
+            <td>Leg</td>
+        </tr>
+        <tr>
+            <td>DS</td>
+            <td>Leg</td>
+            <td>Fisica</td>
+            <td>Maths</td>
+            <td>Soft</td>
+        </tr>
+    </table>
+    <!--OTRO VIDEO, AHORA CON IMAGENES-->
+    <h1 style="text-align: center">Beautiful places in the Argentinian</h1>
+    <table style="text-align: center; margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" src="https://i0.wp.com/vacacionesporargentina.com/wp-content/uploads/2020/11/waterfall-5040210_1920.jpg?fit=1920%2C1272&ssl=1" alt="Cataratas" />
+                    <p class="caption">Cataratas del Iguazu, Misiones-Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" class="imagen-item" src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2019/05/Cerro-de-los-Siete-Colores.jpg" alt="Cerro 7 colours" />
+                    <p class="caption">Cerro de los 7 colores, Jujuy-Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" src="https://img.freepik.com/fotos-premium/faro-eclaireurs-ushuaia_78361-3320.jpg?w=2000" alt="Faro" />
+                    <p class="caption">Faro eclaireurs, Ushuaia-Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" src="http://101lugaresincreibles.com/wp-content/uploads/2013/05/fotos-paisajes-argentina.jpg" alt="Glaciar" />
+                    <p class="caption">Glaciar, Sur de Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" src="https://www.latercera.com/resizer/KP1753lEb4cQLwBh54MV6eq7U24=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/QLJASF2EZFHM3M6EOA7Y7BUE4Y.jpg" alt="CABA" />
+                    <p class="caption">CABA, Bs.As-Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" src="http://blog.alquilerargentina.com/wp-content/uploads/2021/02/5-paisajes-del-sur-argentino-portada-2.jpg" alt="Patagonia" />
+                    <p class="caption">Patagonia Argentina</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <footer id="footer">
+        <p>Copryright 2022</p>
+    </footer>
+</body>
+</html>
