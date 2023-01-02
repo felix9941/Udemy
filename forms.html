@@ -6,8 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<title>Into to html Forms</title>-->
     <title>Create a Signup Form</title>
+    <style>
+        #register-form{
+            width: 300px;
+            background-color: azure;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input-label{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+        .input-item {
+            width: 100%;
+        }
+        #terms-check{
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+        .menu-item{
+        display: inline;
+        padding: 12px 16px;
+        background-color: azure;
+    }
+    </style>
 </head>
-<body>
+<body style="background-color: lightblue;">
     <!--<form>
         Username: <br>
         <input type="text" name="username">
@@ -19,26 +45,31 @@
     </form>-->
 
     <!--Signup-->
-    <h1>Signup</h1>
-    <form>
+    <ul id="topbar" >
+        <li class="menu-item"><a href="/menu-links.html">Home</a></li>
+        <li class="menu-item"><a href="/about.html">About</a></li>
+        <li class="menu-item"><a href="/contact.html">Contact</a></li>
+    </ul>
+    <h1 style="text-align: center">SIGNUP</h1>
+    <form id="register-form">
         <div>
-            Full Name: <br>
-            <input type="text" name="full-name">
+            <p class="input-label">Full Name:</p> 
+            <input class="input-item" type="text" name="full-name">
         </div>
         <div>
-            Email: <br>
-            <input type="email" name="email">
+            <p class="input-label">Email: </p>
+            <input class="input-item" type="email" name="email">
         </div>
         <div>
-            Password: <br>
-            <input type="password" name="password">
+            <p class="input-label">Password:</p>
+            <input class="input-item" type="password" name="password">
         </div>
         <div>
-            Confirm Password: <br>
-            <input type="password" name="password">
+            <p class="input-label">Confirm Password:</p>
+            <input class="input-item" type="password" name="confirm-password">
         </div>
         <div>
-            Gender:<br>
+            <p class="input-label">Gender:</p>
             <input type="radio" name="male" value="male">
             Male</input>
             <input type="radio" name="female" value="female">
@@ -46,6 +77,22 @@
             <input type="radio" name="other" value="other">
             Other</input>
         </div>
+        <div>
+            <p class="input-label">Security Question:</p>
+            <select class="input-item" name="security-question">
+                <option value="first-pet-name">What Was your first pet name?</option>
+                <option value="first-job">What Was your first Job?</option>
+                <option value="nick-name">What Was your nickname?</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="answer" rows="6" cols="30"></textarea>
+        </div>
+        <div>
+            <input id="terms-check" type="checkbox" name="terms-conditions" value="accept">
+            I agree to accept terms and conditions
+        </div>
+        <input type="submit" value="Register">
     </form>
 </body>
 </html>
