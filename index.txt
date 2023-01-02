@@ -1,6 +1,0 @@
-<html>
-<head>
-      <title> My HTML Page </title>
-</head>
-      <p> My Paragraph </p>
-</html>
