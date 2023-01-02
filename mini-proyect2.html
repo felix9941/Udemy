@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Proyect 2: Design invoice using table</title>
+<!--El margin se usa para centrar en pantalla en este caso-->
+    <style>
+        
+        table{
+            width: 800px;
+            text-align: left;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, td, th{
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+            padding: 8px;
+            line-height: 1.3;
+        }
+
+        .label{
+            font-weight: 600;
+        }
+        th{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body style="background-color: #f2f6ff">
+    <table>
+        <tr>
+            <th colspan="3">Invoice #1234ABC</th>
+            <th>01th January 2023</th>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <span class="label">Pay to:</span><br>
+                The Tuc City<br>
+                25 de mayo street<br>
+                SMT, ARG
+            </td>
+            <td colspan="2">
+                <span class="label">Customer:</span><br>
+                Felix Figue<br>
+                728 combes, street<br>
+                SMT - 4000, ARG
+            </td>
+        </tr>
+        <tr>
+            <th>Name/Descripcion</th>
+            <th>Qty.</th>
+            <th>MRP</th>
+            <th>Amount</th>
+        </tr>
+
+        <tr>
+            <td>Biryani</td>
+            <td>3</td>
+            <td>400</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>chocolate Shake</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <th colspan="3">SubTotal:</th>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <th colspan="2">Tax</th>
+            <td>18%</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <th colspan="3">Grand Total:</th>
+            <td>Rs 1620</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
