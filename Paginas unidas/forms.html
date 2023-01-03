@@ -55,20 +55,24 @@
         <!--El PLACEHOLDER es para poner en la parte de escribir en forma mas suave lo que se pide-->
         <div>
             <p class="input-label">Full Name:</p> 
-            <input class="input-item" type="text" name="fullname" placeholder="Full Name" autofocus>
+            <input class="input-item" type="text" name="fullname" placeholder="Full Name" autofocus required>
         </div>
         <div>
             <p class="input-label">Email: </p>
-            <input class="input-item" type="email" name="email" placeholder="Email" autofocus>
+            <input class="input-item" type="email" name="email" placeholder="Email" autofocus required>
+        </div>
+        <div>
+            <p class="input-label">Age:</p>
+            <input class="input-item" type="number" name="age" placeholder="Age" min="18" max="60">
         </div>
         <div>
             <p class="input-label">Password:</p>
-            <input class="input-item" type="password" name="password" placeholder="Password">
+            <input class="input-item" type="password" name="password" placeholder="Password" required maxlength="8">
         </div>
         <div>
            <!-- <p class="input-label">Confirm Password:</p>-->
            <br>
-            <input class="input-item" type="password" name="confirm-password" placeholder="Confirm Password">
+            <input class="input-item" type="password" name="confirm-password" placeholder="Confirm Password" maxlength="8">
         </div>
         <div>
             <p class="input-label">Gender:</p>
