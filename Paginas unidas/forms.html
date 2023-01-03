@@ -46,27 +46,29 @@
 
     <!--Signup-->
     <ul id="topbar" >
-        <li class="menu-item"><a href="/menu-links.html">Home</a></li>
-        <li class="menu-item"><a href="/about.html">About</a></li>
-        <li class="menu-item"><a href="/contact.html">Contact</a></li>
+        <li class="menu-item"><a href="/Paginas unidas/menu-links.html">Home</a></li>
+        <li class="menu-item"><a href="/Paginas unidas/about.html">About</a></li>
+        <li class="menu-item"><a href="/Paginas unidas/contact.html">Contact</a></li>
     </ul>
     <h1 style="text-align: center">SIGNUP</h1>
     <form id="register-form" method="GET">
+        <!--El PLACEHOLDER es para poner en la parte de escribir en forma mas suave lo que se pide-->
         <div>
             <p class="input-label">Full Name:</p> 
-            <input class="input-item" type="text" name="fullname">
+            <input class="input-item" type="text" name="fullname" placeholder="Full Name" autofocus>
         </div>
         <div>
             <p class="input-label">Email: </p>
-            <input class="input-item" type="email" name="email">
+            <input class="input-item" type="email" name="email" placeholder="Email" autofocus>
         </div>
         <div>
             <p class="input-label">Password:</p>
-            <input class="input-item" type="password" name="password">
+            <input class="input-item" type="password" name="password" placeholder="Password">
         </div>
         <div>
-            <p class="input-label">Confirm Password:</p>
-            <input class="input-item" type="password" name="confirm-password">
+           <!-- <p class="input-label">Confirm Password:</p>-->
+           <br>
+            <input class="input-item" type="password" name="confirm-password" placeholder="Confirm Password">
         </div>
         <div>
             <p class="input-label">Gender:</p>
@@ -79,7 +81,7 @@
         </div>
         <div>
             <p class="input-label">Security Question:</p>
-            <select class="input-item" name="security-question">
+            <select class="input-item" name="security-question" multiple>
                 <option value="first-pet-name">What Was your first pet name?</option>
                 <option value="first-job">What Was your first Job?</option>
                 <option value="nick-name">What Was your nickname?</option>
