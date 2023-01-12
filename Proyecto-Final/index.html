@@ -5,8 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final HTML5</title>
+    <style>
+        .menu-item{
+            display: inline;
+            padding: 12px 16px;
+            background-color: lightblue;
+            text-align: center;
+        }
+        #topbar{
+        list-style-type: auto;
+        background-color: lightskyblue;
+        padding: 25px;
+       }
+       .portada{
+        text-align: center;
+       }
+       .imagen{
+        width: 1300px;
+        height: 500px;
+       }
+       #footer{
+        background-color: lightskyblue;
+        padding: 24px;
+        font-weight: 600;
+       }
+       td, th{
+            padding: 20px;
+        }
+        .imagen-item{
+            width: 450px;
+            height: 300px;
+        }
+        .caption{
+            font-size: 24px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+    </style>
 </head>
-<body>
-    
+<body style="background-color: lightgray">
+    <ul id="topbar" style="list-style-type: none">
+        <li class="menu-item"><a href="/Proyecto-Final/about.html">Viajes</a></li>
+        <li class="menu-item"><a href="/Proyecto-Final/contact.html">Contact</a></li>
+        <li class="menu-item"><a href="/Proyecto-Final/index.html">About</a></li>
+    </ul>
+    <div class="portada">
+        <img class="imagen" src="https://www.redcabanias.com/blog/wp-content/uploads/2013/04/ciudad-hist%C3%B3rica1.jpg" alt="CasaHistorica">
+    </div>
+    <h1 style="text-align: center;">Mis Lugares Favoritos</h1>
+    <table style="text-align: center; margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" src="https://upload.wikimedia.org/wikipedia/commons/7/73/BANDA_DEL_RIO_SALI_.jpg" alt="Banda" />
+                    <p class="caption">Banda del Rio Sali, Tucumán-Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" class="imagen-item" src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/San-Miguel-de-Tucuman.jpg" alt="SMT" />
+                    <p class="caption">San Miguel de Tucumán, Tucumán-Arg</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img class="imagen-item" class="imagen-item" src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2019/05/Cerro-de-los-Siete-Colores.jpg" alt="Cerro 7 colours" />
+                    <p class="caption">Cerro de los 7 colores, Jujuy-Arg</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <footer id="footer">
+        <p>Copryright 2022- Proyecto-Final- Figueroa Felix</p>
+    </footer>
 </body>
 </html>
