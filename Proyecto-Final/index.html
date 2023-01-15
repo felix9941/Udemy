@@ -1,86 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Final HTML5</title>
     <style>
-        .menu-item{
-            display: inline;
-            padding: 12px 16px;
-            background-color: lightblue;
-            text-align: center;
-        }
-        #topbar{
+      .menu-item {
+        display: inline;
+        padding: 12px 16px;
+        background-color: azure;
+        text-align: center;
+      }
+      #topbar {
         list-style-type: auto;
         background-color: lightskyblue;
         padding: 25px;
-       }
-       .portada{
+      }
+      .portada {
         text-align: center;
-       }
-       .imagen{
+      }
+      /*.imagen {
         width: 1100px;
         height: 500px;
-       }
-       #footer{
+      }*/
+      #footer {
         background-color: lightskyblue;
         padding: 24px;
         font-weight: 600;
-       }
-       td, th{
-            padding: 20px;
-        }
-        .imagen-item{
-            width: 450px;
-            height: 300px;
-        }
-        .caption{
-            font-size: 24px;
-            margin-top: 8px;
-            font-weight: 600;
-        }
+      }
+      .imagen-item {
+        width: 450px;
+        height: 300px;
+      }
+      .caption {
+        font-size: 24px;
+        margin-top: 8px;
+        font-weight: 600;
+      }
+      #tabla2 {
+        text-align: center;  
+        margin-left: 0px; 
+        margin-right: 0px;  
+        
+      }
+      #tabla2 td{
+        border: none;
+      }
+      #tabla2 img{
+        width: 40%;
+        height: 40%;
+        padding: 0px;
+        margin: 0px;
+      }
+      .caption {
+        font-size: 20px;
+        margin-top: 8px;
+        font-weight: 600;
+      }
+
     </style>
-</head>
-<body style="background-color: lightgray">
+  </head>
+  <body style="background-color: lightgray">
     <ul id="topbar" style="list-style-type: none">
-        <li class="menu-item"><a href="/Proyecto-Final/index.html">Viajes</a></li>
-        <li class="menu-item"><a href="/Proyecto-Final/contact.html">Contact</a></li>
-        <li class="menu-item"><a href="/Proyecto-Final/about.html">About</a></li>
+      <li class="menu-item"><a href="/Proyecto-Final/index.html">Viajes</a></li>
+      <li class="menu-item"><a href="/Proyecto-Final/contact.html">Contacto</a></li>
     </ul>
     <div class="portada">
-        <img class="imagen" src="https://www.redcabanias.com/blog/wp-content/uploads/2013/04/ciudad-hist%C3%B3rica1.jpg" alt="CasaHistorica">
+      <img
+        class="imagen"
+        src="https://www.redcabanias.com/blog/wp-content/uploads/2013/04/ciudad-hist%C3%B3rica1.jpg"
+        alt="CasaHistorica" width="100%" height="600px"
+      />
     </div>
-    <h1 style="text-align: center;">Mis Lugares Favoritos</h1>
-    <table style="text-align: center; margin-left: auto; margin-right: auto;">
-        <tr>
-            <td>
-                <div>
-                    <img class="imagen-item" src="https://upload.wikimedia.org/wikipedia/commons/7/73/BANDA_DEL_RIO_SALI_.jpg" alt="Banda" />
-                    <p class="caption">Banda del Rio Sali, Tucumán-Arg</p>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <img class="imagen-item" class="imagen-item" src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/San-Miguel-de-Tucuman.jpg" alt="SMT" />
-                    <p class="caption">San Miguel de Tucumán, Tucumán-Arg</p>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <img class="imagen-item" class="imagen-item" src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2019/05/Cerro-de-los-Siete-Colores.jpg" alt="Cerro 7 colours" />
-                    <p class="caption">Cerro de los 7 colores, Jujuy-Arg</p>
-                </div>
-            </td>
-        </tr>
+    <h1 style="text-align: center">Mis Lugares Favoritos</h1>
+    <table id="tabla2">
+      <tr>
+        <td>
+          <div>
+            <a href="/Proyecto-Final/about.html">
+              <img
+                class="imagen-item"
+                src="https://upload.wikimedia.org/wikipedia/commons/7/73/BANDA_DEL_RIO_SALI_.jpg"
+                alt="Banda"
+              />
+              <p class="caption">Banda del Rio Sali, Tucumán-Arg</p>
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <a href="/Proyecto-Final/about.html">
+              <img
+                class="imagen-item"
+                src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/San-Miguel-de-Tucuman.jpg"
+                alt="SMT"
+              />
+              <p class="caption">San Miguel de Tucumán, Tucumán-Arg</p>
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <a href="/Proyecto-Final/about.html">
+              <img
+                class="imagen-item"
+                src="https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2019/05/Cerro-de-los-Siete-Colores.jpg"
+                alt="Cerro 7 colours"
+              />
+              <p class="caption">Cerro de los 7 colores, Jujuy-Arg</p>
+            </a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>
+            <a href="/Proyecto-Final/about.html" target="_blank">
+              <img
+                class="imagen-item"
+                src="https://media.istockphoto.com/id/973274388/es/foto/vista-a%C3%A9rea-de-la-ciudad-de-buenos-aires-con-obelisco-y-avenida-9-de-julio-en-la-noche-buenos.jpg?s=612x612&w=0&k=20&c=8Dc12RXRATScsR8TW7AQgUOTFdCx5V8axyLKBhYuWQY="
+                alt="Buenos Aires"
+              />
+              <p class="caption">Buenos Aires, Bs.As-Arg</p>
+            </a>
+          </div>
+        </td>
+      </tr>
+
+
     </table>
     <footer id="footer">
-        <p>Copryright 2022- Proyecto-Final- Figueroa Felix</p>
+      <p>Copryright 2022- Proyecto-Final- Figueroa Felix</p>
     </footer>
-</body>
+  </body>
 </html>
